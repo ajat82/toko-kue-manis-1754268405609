@@ -1,0 +1,145 @@
+/* Toko Kue Manis - CSS Styling */
+
+:root {
+  --primary-color: #F2E8CF; /* Cream */
+  --secondary-color: #A0522D; /* Sienna */
+  --accent-color: #8B4513; /* SaddleBrown */
+  --text-color: #333;
+  --light-text-color: #fff;
+  --font-family: 'Poppins', sans-serif; /* Replace with actual font */
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}
+
+/* Navigation */
+nav {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+
+/* Hero Section */
+.hero {
+  background-image: url('hero-image.jpg'); /* Replace with hero image */
+  background-size: cover;
+  background-position: center;
+  color: var(--light-text-color);
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: var(--accent-color);
+  color: var(--light-text-color);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: darken(var(--accent-color), 10%);
+}
+
+/* Product Section */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 2rem;
+}
+
+.product {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--light-text-color);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+/* Media Queries (Responsive) */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 0.5rem 0;
+  }
+}
+
+
+/* Smooth Scrolling (requires JavaScript) */
+/* Add JavaScript for smooth scrolling */
+
+
+/* Animations (requires JavaScript) */
+/* Add JavaScript for animations */
